@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablet</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style_btn.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_nav.css">
+    <link rel="stylesheet" href="../css/style_section.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand&display=swap');</style>
+    
+</head>
+<body style="background: #070995; background-position: center; background-repeat: no-repeat; font-family: 'Poppins', sans-serif;">
+    <div class="navbar_menu_div">      
+        <nav>
+            <img src="../img/Logo/Simon-TechGuru.png" class="techguru_logo_nav" style="border-radius: 50px; width: 300px;"> 
+            <ul class="links_nav">
+                <li><a class="link_a" href="TechGuru-kezdolap.html"><i class="fa fa-fw fa-home"></i>Kezdőlap</a></li>
+                <li><a class="link_a" href="Telefon.html"><i class="fa fa-fw fa-phone"></i>Telefon</a></li>
+                <li><a class="link_a active" href="Tablet.html"><i class="fa fa-fw fa-tablet"></i>Tablet</a></li>
+                <li><a class="link_a" href="Laptop.html"><i class="fa fa-fw fa-laptop"></i>Laptop</a></li>
+                <li><a class="link_a" href="Kapcsolat.html"><i class="fa fa-address-card-o"></i>Kapcsolat</a></li>
+            </ul>
+            <a href="Bejelentkezes.html"><button id="btn">Bejelentkezés</button></a>
+        </nav>       
+    </div>
+    <header class="main_container_header">
+        <div>
+            <h1 class="title_header_h1">
+                <span class="title_header_span">Tablet</span>  
+            </h1>
+            <p id="introduction_header_p">Üdvözöljük a tabletek világában! A tablet egy kompakt és hordozható eszköz, mely tökéletesen illeszkedik az aktív életmódot élők számára. Különleges képessége az érintőképernyő, amely lehetővé teszi az intuitív navigációt és az alkalmazások könnyű használatát.
+                A tablet széles körű funkcionalitása révén lehetővé teszi a webböngészést, a szórakozást, a munkavégzést és az oktatást is. A gyors processzorok és a nagy felbontású kijelzők révén a tablet egy kiváló eszköz médiafogyasztáshoz és tartalomkészítéshez is. 
+                Ezenkívül a hosszú akkumulátor-élettartam és a könnyű hordozhatóság teszi a tableteket az ideális választássá azok számára, akik mindig is kapcsolatban szeretnének maradni a digitális világgal.
+            </p>
+        </div>     
+    </header>
+    <section class="main_container_section">
+        <div>
+            <h1 class="section_title_h1">Kiemelt termékeink</h1>
+            <table>
+                <tr>
+                  <td><img src="../img/Tablet/apple-129-inch-ipad-pro-wifi-256gb-space-gray.png" style="border-radius: 0; width: 50%; height: 50%;"></td>
+                  <td>
+                    <h3>iPad Pro</h3>
+                    <ul>
+                        <li>Érintőképernyős</li>
+                        <li>M2 chip</li>
+                        <li>8 magos</li>
+                        <li>12 GB RAM</li>
+                    </ul>
+                    <button type="button" class="shopping-tablet-btn" onclick="shoppingClickTablet1()">Vásárlás</button>
+                    <p id="btn_shoppingClickTablet_1"></p>
+                  </td>
+                </tr>
+                <tr>
+                    <td><img src="../img/Tablet/samsung-galaxy-tab-s9-plus.png" style="border-radius: 0; width: 60%; height: 60%;"></td>
+                    <td>
+                      <h3>Samsung Galaxy Tab S9 Plus</h3>
+                      <ul>
+                        <li>Érintőképernyős</li>
+                        <li>Qualcomm Snapdragon 8 Gen 2</li>
+                        <li>8 magos</li>
+                        <li>12 GB RAM</li>
+                      </ul>
+                      <button type="button" class="shopping-tablet-btn" onclick="shoppingClickTablet2()">Vásárlás</button>
+                    <p id="btn_shoppingClickTablet_2"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="../img/Tablet/Xiaomi-Pad-6.png" style="border-radius: 0; width: 60%; height: 60%;"></td>
+                    <td>
+                      <h3>Xiaomi Pad 6</h3>
+                      <ul>
+                        <li>Érintőképernyős</li>   
+                        <li>Qualcomm Snapdragon 870</li>
+                        <li>8 magos</li>
+                        <li>6 GB RAM</li>
+                      </ul>
+                      <button type="button" class="shopping-tablet-btn" onclick="shoppingClickTablet3()">Vásárlás</button>
+                    <p id="btn_shoppingClickTablet_3"></p>
+                    </td>
+                  </tr>
+              </table>
+        </div>
+    </section>  
+    <select onchange="color(this.value)" style="width: 20vh; height: 4vh; font-size: medium; font-weight: bold; border-radius: 2vh; text-align: center; background-color: #0996e2; color: whitesmoke;">
+      <option value="#070995">Eredeti háttérszín</option>
+      <option value="black">Black</option>
+      <option value="darkRed">DarkRed</option>
+      <option value="darkViolet">DarkViolet</option>
+      <option value="slateGrey">SlateGrey</option>
+      <option value="rebeccaPurple">RebeccaPurple</option>
+  </select>
+  <script src="../script/script_Button.js"></script>
+  <script>
+    function color(value) {
+        document.body.style.backgroundColor = value;
+    }
+  </script>
+</body>
+</html>

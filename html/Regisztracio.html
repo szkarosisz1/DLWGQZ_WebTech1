@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style_btn.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_nav.css">
+    <link rel="stylesheet" href="../css/style_section.css">
+    <link rel="stylesheet" href="../css/style_signup.css"> 
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand&display=swap');</style>
+    
+</head>
+<body style="background: #070995; background-position: center; background-repeat: no-repeat; font-family: 'Poppins', sans-serif;">
+    <div class="navbar_menu_div">      
+        <nav>
+            <img src="../img/Logo/Simon-TechGuru.png" class="techguru_logo_nav" style="border-radius: 50px;"> 
+            <ul class="links_nav">
+                <li><a class="link_a" href="TechGuru-kezdolap.html"><i class="fa fa-fw fa-home"></i>Kezdőlap</a></li>
+                <li><a class="link_a" href="Telefon.html"><i class="fa fa-fw fa-phone"></i>Telefon</a></li>
+                <li><a class="link_a" href="Tablet.html"><i class="fa fa-fw fa-tablet"></i>Tablet</a></li>
+                <li><a class="link_a" href="Laptop.html"><i class="fa fa-fw fa-laptop"></i>Laptop</a></li>
+                <li><a class="link_a" href="Kapcsolat.html"><i class="fa fa-address-card-o"></i>Kapcsolat</a></li>
+            </ul>
+            <a href="Bejelentkezes.html"><button id="btn">Bejelentkezés</button></a>
+        </nav>    
+    <div id="overlay">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h1 class="signin_title_h1">Regisztráció</h1>         
+            <div class="form-control">
+                <label for="name">Név:</label>
+                <input type="text" id="name" placeholder="Név">
+                <small class="error"></small>
+            </div>
+            <div class="form-control">
+                <label for="birthday">Születési év:</label>
+                <input type="date" id="dateInput" placeholder="éééé/hh/nn">
+            </div>        
+            <div class="form-control">
+                <label for="email">E-mail cím:</label>
+                <input type="email" id="email" placeholder="E-mail cím" />
+                <small class="error"></small>
+            </div>        
+            <div class="form-control">
+                <label for="passw">Jelszó:</label>
+                <input type="password" id="passwInput" placeholder="Jelszó">             
+                <small class="error"></small>
+            </div>
+            <div class="form-control">
+                <label for="passw">Válasszon nemet:</label>
+                <div style="display: inline-block">
+                    <input type="radio" id="male" name="select_gender" value="Férfi">
+                    <label class="radio-label" for="male">Férfi</label>
+                </div>
+                <div style="display: inline-block">
+                    <input type="radio" id="female" name="select_gender" value="Nő">
+                    <label class="radio-label" for="female">Nő</label>
+                </div>
+                <small class="error"></small>
+            </div>
+            <div class="center">
+                <input type="submit" value="Regisztráció">
+                <p id="success"></p>
+            </div>
+        </form>
+    </div>
+    <select onchange="color(this.value)" style="width: 20vh; height: 4vh; font-size: medium; font-weight: bold; border-radius: 2vh; text-align: center; background-color: #0996e2; color: whitesmoke;">
+        <option value="#070995">Eredeti háttérszín</option>
+        <option value="black">Black</option>
+        <option value="darkRed">DarkRed</option>
+        <option value="darkViolet">DarkViolet</option>
+        <option value="slateGrey">SlateGrey</option>
+        <option value="rebeccaPurple">RebeccaPurple</option>
+    </select>
+    <script src="../script/script_Signup.js"></script>
+    <script>
+        function color(value) {
+            document.body.style.backgroundColor = value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TechGuru</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style_btn.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_nav.css">
+    <link rel="stylesheet" href="../css/style_section.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand&display=swap');</style>
+    <style>.section_div .section_picture_div_left img{border-radius: 0%; width: 300%; height: 120%;}</style>
+</head>
+
+<body style="background: #070995; background-position: center; background-repeat: no-repeat; font-family: 'Poppins', sans-serif;">
+    <div class="navbar_menu_div">      
+        <nav>
+            <img src="../img/Logo/Simon-TechGuru.png" class="techguru_logo_nav" style="border-radius: 50px;"> 
+            <ul class="links_nav">
+                <li><a class="link_a active" href="TechGuru-kezdolap.html"><i class="fa fa-fw fa-home"></i>Kezdőlap</a></li>
+                <li><a class="link_a" href="Telefon.html"><i class="fa fa-fw fa-phone"></i>Telefon</a></li>
+                <li><a class="link_a" href="Tablet.html"><i class="fa fa-fw fa-tablet"></i>Tablet</a></li>
+                <li><a class="link_a" href="Laptop.html"><i class="fa fa-fw fa-laptop"></i>Laptop</a></li>
+                <li><a class="link_a" href="Kapcsolat.html"><i class="fa fa-address-card-o"></i>Kapcsolat</a></li>
+            </ul>
+            <a href="Bejelentkezes.html"><button id="btn">Bejelentkezés</button></a>
+        </nav>       
+    </div>
+    <header class="main_container_header">
+        <div>
+            <h1 class="title_header_h1">Üdvözöljük Önöket a <span class="title_header_span">TechGuru</span> weboldalán!</h1>
+            <p id="introduction_header_p">Vágyakozik egy új gép beszerzésére, vagy éppen régi gépét szeretné lecserélni? Akkor jó helyen jár! 
+               Cégünk az Önök kényelmét és igényeit szem előtt tartva jött létre, hogy segítsen Önöknek megtalálni a tökéletes gépet, legyen szó otthoni vagy ipari felhasználásról.</p>
+        </div>     
+    </header>
+    <h1 class="title_header_h1">
+        <span>Miért érdemes minket választani?</span>             
+    </h1> 
+    <section class="main_container_section">
+        <div class="section_div">
+            <div class="section_picture_div_left">
+                <img src="../img/TechGuru-kezdolap/xiaomi-33331.png">
+            </div>
+            <div class="section_text_right">
+                <div class="section_title_right">
+                    <h2>Széles választék</h2>
+                </div>
+                <div class="section_content">
+                    <p>Weboldalunkon hatalmas gépkínálatból válogathatnak, legyen szó számítógépekről, háztartási gépekről vagy ipari eszközökről. Minden igényt kielégítünk!</p>
+                </div>                   
+            </div> 
+        </div>
+    </section>
+    <section class="main_container_section">
+        <div class="section_div">
+            <div class="section_picture_div_left">
+                <img src="../img/TechGuru-kezdolap/laptop-toshiba-png.png">
+            </div>
+            <div class="section_text_right">
+                <div class="section_title_right">
+                    <h2>Minőség</h2>
+                </div>
+                <div class="section_content">
+                    <p>Csak megbízható gyártók termékeit kínáljuk, így garantáltan hosszú élettartamú és megbízható gépeket talál nálunk.</p>
+                </div>                   
+            </div> 
+        </div>
+    </section>
+    <section class="main_container_section">
+        <div class="section_div">
+            <div class="section_picture_div_left">
+                <img src="../img/TechGuru-kezdolap/dollar-icon-png-3557.png">
+            </div>
+            <div class="section_text_right">
+                <div class="section_title_right">
+                    <h2>Versenyképes árak</h2>
+                </div>
+                <div class="section_content">
+                    <p>Próbáljuk a legjobb ár-érték arányú termékeket kínálni, hogy a pénztárcájuk is mosolyogjon vásárlás után.</p>
+                </div>                   
+            </div> 
+        </div>
+    </section>
+    <section class="main_container_section">
+        <div class="section_div">
+            <div class="section_picture_div_left">
+                <img src="../img/TechGuru-kezdolap/Delivery-01-1-4.png">
+            </div>
+            <div class="section_text_right">
+                <div class="section_title_right">
+                    <h2>Gyors és megbízható szállítás</h2>
+                </div>
+                <div class="section_content">
+                    <p>Tudjuk, hogy Önnek sürgős lehet egy új gép, így igyekszünk a lehető legrövidebb idő alatt kiszállítani rendelését.</p>
+                </div>                   
+            </div> 
+        </div>
+    </section> 
+    <select onchange="color(this.value)" style="width: 20vh; height: 4vh; font-size: medium; font-weight: bold; border-radius: 2vh; text-align: center; background-color: #0996e2; color: whitesmoke;">
+        <option value="#070995">Eredeti háttérszín</option>
+        <option value="black">Black</option>
+        <option value="darkRed">DarkRed</option>
+        <option value="darkViolet">DarkViolet</option>
+        <option value="slateGrey">SlateGrey</option>
+        <option value="rebeccaPurple">RebeccaPurple</option>
+    </select>
+    <script>
+        function color(value) {
+            document.body.style.backgroundColor = value;
+        }
+    </script>
+</body>
+</html>

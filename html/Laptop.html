@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style_btn.css">
+    <link rel="stylesheet" href="../css/style_header.css">
+    <link rel="stylesheet" href="../css/style_nav.css">
+    <link rel="stylesheet" href="../css/style_section.css">  
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand&display=swap');</style>
+</head>
+
+<body style="background: #070995; background-position: center; background-repeat: no-repeat; font-family: 'Poppins', sans-serif;">
+    <div class="navbar_menu_div">      
+        <nav>
+            <img src="../img/Logo/Simon-TechGuru.png" class="techguru_logo_nav" style="border-radius: 50px;width: 300px;"> 
+            <ul class="links_nav">
+                <li><a class="link_a" href="TechGuru-kezdolap.html"><i class="fa fa-fw fa-home"></i>Kezdőlap</a></li>
+                <li><a class="link_a" href="Telefon.html"><i class="fa fa-fw fa-phone"></i>Telefon</a></li>
+                <li><a class="link_a" href="Tablet.html"><i class="fa fa-fw fa-tablet"></i>Tablet</a></li>
+                <li><a class="link_a active" href="Laptop.html"><i class="fa fa-fw fa-laptop"></i>Laptop</a></li>
+                <li><a class="link_a" href="Kapcsolat.html"><i class="fa fa-address-card-o"></i>Kapcsolat</a></li>
+            </ul>
+            <a href="Bejelentkezes.html"><button id="btn">Bejelentkezés</button></a>
+        </nav>       
+    </div>
+    <header class="main_container_header">
+        <div>
+            <h1 class="title_header_h1">
+                <span class="title_header_span">Laptop</span>  
+            </h1>
+            <p id="introduction_header_p">A laptopok a modern technológia csúcspontjai, amelyek az összetett és dinamikus világunk szívében találhatók. Ezek az eszközök egyedülállóan hordozhatók és rendkívül sokoldalúak, lehetővé téve a munka, a tanulás és a szórakozás bárhol és bármikor történő elvégzését. 
+                A lenyűgöző teljesítményű processzorok és a kristálytiszta kijelzők új dimenziót nyitnak a produktivitás és a médiafogyasztás terén. A vékony és könnyű dizájnok még a legforgalmasabb életstílust is kiegészítik, miközben az erőteljes akkumulátorok gondoskodnak a hosszú élettartamról. 
+                A laptopok nem csak eszközök, hanem az életünk elengedhetetlen társai, amelyek segítenek álmainkat valóra váltani, kapcsolatban maradni és az ismeretek határait feszegetni.
+            </p>
+        </div>     
+    </header>
+    <section class="main_container_section">
+        <div>
+            <h1 class="section_title_h1">Kiemelt termékeink</h1>
+            <table>
+                <tr>
+                  <td><img src="../img/Laptop/Asus-Vivobook-S-15-OLED-M3502QA-MA141.png" style="border-radius: 0;width: 70%;height: 70%;"></td>
+                  <td>
+                    <h3>Asus Vivobook S 15 OLED M3502QA-MA141 Notebook</h3>
+                    <ul>
+                        <li>Nincs operációs rendszer</li>
+                        <li>16 GB RAM</li>
+                        <li>AMD Ryzen 5 5600H processzor</li>
+                        <li>8 magos</li>
+                        <li>AMD Radeon Graphics videókártya</li>
+                    </ul>
+                    <button type="button" class="shopping-laptop-btn" onclick="shoppingClick1()">Vásárlás</button>
+                    <p id="btn_shoppingClick_1"></p>
+                  </td>
+                </tr>
+                <tr>
+                    <td><img src="../img/Laptop/HP-ZBook-Studio-16-G10.png" style="border-radius: 0;width: 70%;height: 70%;"></td>
+                    <td>
+                      <h3>HP ZBook Studio 16 G10</h3>
+                      <ul>
+                        <li>Windows 11 Pro operációs rendszer</li>
+                        <li>NVIDIA RTX A4000 12 GB GDDR6 videókártya</li>
+                        <li>Intel® Core™ i7 i7-13800H processzor</li>
+                        <li>8 magos</li>
+                        <li>32 GB RAM</li>
+                      </ul>
+                      <button type="button" class="shopping-laptop-btn" onclick="shoppingClick2()">Vásárlás</button>
+                      <p id="btn_shoppingClick_2"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="../img/Laptop/apple-macbook-pro-16.png" style="border-radius: 0;width: 70%;height: 70%;"></td>
+                    <td>
+                      <h3>Apple MacBook Pro 16 M2 MNW83</h3>
+                      <ul>
+                        <li>MacOS</li>
+                        <li>Integrált videókártya</li>
+                        <li>Apple M2 Pro processzor</li>
+                        <li>512 GB SSD háttértár</li>
+                        <li>16 GB RAM</li>
+                      </ul>
+                      <button type="button" class="shopping-laptop-btn" onclick="shoppingClick3()">Vásárlás</button>
+                      <p id="btn_shoppingClick_3"></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="../img/Laptop/dell-inspiron-15-plus.png" style="border-radius: 0;width: 70%;height: 70%;"></td>
+                    <td>
+                      <h3>Dell Inspiron 15 Plus</h3>
+                      <ul>
+                        <li>Windows 11</li>
+                        <li>NVIDIA GeForce RTX 3050</li>
+                        <li>Intel® Core™ i5-11400H processzor</li>
+                        <li>8 magos</li>
+                        <li>16 GB RAM</li>
+                      </ul>
+                      <button type="button" class="shopping-laptop-btn" onclick="shoppingClick4()">Vásárlás</button>
+                      <p id="btn_shoppingClick_4"></p>
+                    </td>
+                  </tr>
+              </table>
+        </div>
+    </section>
+    <select onchange="color(this.value)" style="width: 20vh; height: 4vh; font-size: medium; font-weight: bold; border-radius: 2vh; text-align: center; background-color: #0996e2; color: whitesmoke;">
+      <option value="#070995">Eredeti háttérszín</option>
+      <option value="black">Black</option>
+      <option value="darkRed">DarkRed</option>
+      <option value="darkViolet">DarkViolet</option>
+      <option value="slateGrey">SlateGrey</option>
+      <option value="rebeccaPurple">RebeccaPurple</option>
+  </select>
+  <script src="../script/script_Button.js"></script>  
+  <script>
+      function color(value) {
+          document.body.style.backgroundColor = value;
+      }
+  </script>  
+</body>
+</html>
