@@ -1,0 +1,108 @@
+#btn{
+    padding: 1rem 2rem;
+    font-size: medium;
+    font-weight: bolder;
+    background-color: whitesmoke;
+    color: #03045E;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.shopping-btn{
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+    width: 40%;
+    background-color: #0996e2;
+    color: whitesmoke;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.shopping-btn:focus{
+    border: none;
+    margin-top: 10px;
+    width: 40%;
+    font-size: medium;
+    background-color: #0044ff;
+    color: whitesmoke;
+}
+
+.shopping-tablet-btn{
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+    width: 60%;
+    background-color: #0996e2;
+    color: whitesmoke;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.shopping-tablet-btn:focus{
+    border: none;
+    margin-top: 10px;
+    width: 60%;
+    font-size: medium;
+    background-color: #0044ff;
+    color: whitesmoke;
+}
+
+.shopping-laptop-btn{
+    padding: 8px;
+    border: none;
+    margin-top: 10px;
+    width: 60%;
+    background-color: #0996e2;
+    color: whitesmoke;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.shopping-laptop-btn:focus{
+    border: none;
+    margin-top: 10px;
+    width: 60%;
+    font-size: medium;
+    background-color: #0044ff;
+    color: whitesmoke;
+}
+
+/***************************************************/
+/*Bejelentkezes.html button formázása*/
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    min-width: 200px;
+    background-color:  #0996e2;
+    color: whitesmoke;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn-field button:focus{
+    background-color: #0044ff;
+}
+
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+
+
+
+

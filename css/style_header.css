@@ -1,0 +1,129 @@
+.main_container_header{
+    max-width: 1000px;
+    margin: auto;
+    padding: 5rem 3rem;   
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    align-items: center;
+}
+
+.title_header_h1{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 300%;
+    font-weight: bolder;
+    line-height: 1.5;
+    transform: translateX(2%);
+}
+
+.title_header_span{
+    color: whitesmoke;
+    -webkit-animation: title_header_span 1s ease-in-out infinite alternate;
+    -moz-animation: title_header_span 1s ease-in-out infinite alternate;
+    animation: title_header_span 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes title_header_span {
+    from {
+      text-shadow: 0 0 10px #fff, 
+                   0 0 30px #00E9D8, 
+                   0 0 40px #00E9D8, 
+                   0 0 50px #00E9D8, 
+                   0 0 60px #00E9D8, 
+                   0 0 70px #00E9D8,
+    }
+    to {
+      text-shadow: 0 0 20px #fff,  
+                   0 0 40px #00FFD0, 
+                   0 0 50px #00FFD0, 
+                   0 0 60px #00FFD0, 
+                   0 0 70px #00FFD0, 
+                   0 0 80px #00FFD0;
+    }
+}
+
+#introduction_header_p{
+    width: 100%;
+    display: block;
+    position: relative;
+    text-align: justify;
+    justify-content: center;
+    font-size: 120%;
+    color: whitesmoke;
+    line-height: 2;  
+    transform: translateX(2%);
+}
+
+.dropdown{
+    position: relative;
+    margin-left: 300px;
+    width: 300px;
+    height: 50px;
+}
+
+.dropdown::before{
+    content: '';
+    position: absolute;
+    left: 300px;
+    top: 30px;
+    z-index: 10000;
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+    border-top: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.dropdown.active::before{
+    top: 25px;
+    transform: rotate(-225deg);
+}
+
+.dropdown input{
+    font-size: large;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: whitesmoke;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.dropdown .option{
+    position: absolute;
+    top: 100px;
+    width: 113%;
+    background: whitesmoke;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: none;
+    border-radius: 10px;
+}
+
+.dropdown.active .option{
+    display: block;
+}
+
+.dropdown .option div{
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.dropdown .option div:hover{
+    background: #0077B6;
+    color: whitesmoke;
+}
